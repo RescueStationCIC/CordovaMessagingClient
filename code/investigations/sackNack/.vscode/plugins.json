@@ -1,0 +1,1 @@
+{"plugins":["cordova-plugin-whitelist","phonegap-plugin-push","phonegap-plugin-barcodescanner"]}

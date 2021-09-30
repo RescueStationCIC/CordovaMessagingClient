@@ -1,0 +1,60 @@
+<!-- <section>
+     <div id="quizbox" class="">
+     <div id="subtitle" class="ssib">
+     <h4 class="animated slideInRight">ackNack</configtxt></h4>
+     </div>
+     <div id="intro-text" class="animated slideInRight">
+     
+     </div>
+     </div>
+     </section> -->
+
+<!-- orange: rescuee -->
+<!-- green: rescuer -->
+<ion-view>
+
+
+  <div id="restart" style="margin-bottom: 2em;">
+    <button ion-button round ng-click="vm.restart()">Reset everything and start anew?</button>
+  </div>
+
+
+  <div id="not-connected" ng-show="!vm.pushConnected">Connecting...
+    <button ion-button round ng-click="vm.initialise();">retry</button>
+  </div>
+
+  <div id="connected" ng-show="vm.pushConnected===true">
+    <p>Connected.</p>
+    <div id="role-buttons">
+      <button ion-button round ng-class="{'button-positive': vm.isRescuer===true}" ng-click="vm.setRescuer(true);">Rescuer</button>
+      <button ion-button round ng-class="{'button-positive': vm.isRescuee===true}" ng-click="vm.setRescuee(true);">Rescuee</button>
+    </div>
+
+    <div class="inbound" style="border: 1px solid silver; border: 4px; padding: 11px;" >
+      {{vm.inbound.rendered}}
+    </div>
+
+  </div>
+
+  <div style="padding:16px;" ng-show="vm.deviceId!==false">
+    <div ng-show="vm.isRescuer===true">
+      <h3>Rescuer</h3>
+      <qrcode version="{{5}}" error-correction-level="{{M}}" x-size="{{size}}" data="{{vm.deviceId}}" x-color="{{color}}" x-background="{{background}}" download="false" ></qrcode>
+    </div>
+
+    <div ng-show="vm.isRescuee===true">
+      <h3>Rescuee</h3>
+      <button ion-button round ng-click="vm.rescueeStartCodeScan()">Scan a Rescuer's QR Code</button>
+    </div>
+  </div>
+
+  <div ng-show="vm.uuid!=false">
+    UUID:{{vm.uuid}}
+
+    <button ion-button round ng-click="vm.pingRescuee();" ng-show="vm.isRescuer===true">Ping Rescuee</button>
+    <button ion-button round ng-click="vm.pingRescuer();" ng-show="vm.isRescuee===true">Ping Rescuer</button>
+    <div>{{vm.subscriptionFeedback}}</div>
+  </div>
+
+</ion-view>
+

@@ -1,0 +1,11 @@
+/code/investigations/nativePushTest/platforms
+/code/investigations/nativePushTest/node_modules
+/code/investigations/nativePushTest/plugins
+/code/investigations/firebaseMessaging/.gradle
+/code/investigations/firebaseMessaging/gradle
+/code/investigations/ackNack/platforms
+/code/investigations/ackNack/node_modules
+/code/investigations/ackNack/plugins
+/code/investigations/sackNack/platforms
+/code/investigations/sackNack/node_modules
+/code/investigations/sackNack/plugins

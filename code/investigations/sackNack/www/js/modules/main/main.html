@@ -1,0 +1,63 @@
+<!-- <section>
+     <div id="quizbox" class="">
+     <div id="subtitle" class="ssib">
+     <h4 class="animated slideInRight">ackNack</configtxt></h4>
+     </div>
+     <div id="intro-text" class="animated slideInRight">
+     
+     </div>
+     </div>
+     </section> -->
+
+<!-- orange: rescuee -->
+<!-- green: rescuer -->
+<ion-view >
+  <div id="main" class="role{{vm.role}}">
+
+<!--
+  <div id="restart" style="margin-bottom: 2em;">
+    <button ion-button round ng-click="vm.restart()">Reset everything and start anew?</button>
+  </div>
+-->
+
+  <div id="not-connected" ng-show="!vm.pushConnected">Connecting...
+    <button ion-button round ng-click="vm.initialise();">Retry</button>
+  </div>
+
+  <div id="connected" ng-show="vm.pushConnected===true">
+    <p>Connected.</p>
+    <div id="role-buttons">
+      <button ion-button round ng-class="{'button-positive': vm.role===vm.ROLES.RESCUER}" ng-click="vm.setRescuer(true);">Rescuer</button>
+      <button ion-button round ng-class="{'button-positive': vm.role===vm.ROLES.RESCUEE}" ng-click="vm.setRescuee(true);">Rescuee</button>
+    </div>
+
+    <div class="inbound" style="border: 1px solid silver; border: 4px; padding: 11px;" >
+      {{vm.inbound.rendered}}
+    </div>
+
+  </div>
+
+  <div style="padding:16px;" ng-show="vm.deviceId!==false">
+    <div ng-show="vm.activity===vm.ACTIVITY.SCAN">
+      <h3>{{vm.ROLE_STRINGS[vm.role]}}</h3>
+      <button ion-button round ng-click="vm.startCodeScan()">Scan a {{vm.ROLE_STRINGS[vm.otherRole]}}'s QR Code</button>
+    </div>
+
+    <div ng-show="vm.activity===vm.ACTIVITY.SHOW">
+      <h3>{{vm.ROLE_STRINGS[vm.role]}}</h3>
+      <p>Connect to a {{vm.ROLE_STRINGS[vm.otherRole]}}</p>
+
+      <qrcode x-version="{{5}}" x-error-correction-level="{{M}}" x-size="{{size}}" data="{{vm.registrationId}}" x-color="{{color}}" x-background="{{background}}" download="false" ></qrcode>
+    </div>
+  </div>
+
+  <div ng-show="vm.uuid!=false">
+    UUID:{{vm.uuid}}
+
+    <div>{{vm.subscriptionFeedback}}</div>
+    <div id="pingOther">
+      <button ion-button round ng-click="vm.pingOther();" >Ping the other!</button>
+    </div>
+  </div>
+</ion-view>
+

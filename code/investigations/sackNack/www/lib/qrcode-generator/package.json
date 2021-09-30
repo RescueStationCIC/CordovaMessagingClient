@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "qrcode-generator@^1.1.0",
+        "scope": null,
+        "escapedName": "qrcode-generator",
+        "name": "qrcode-generator",
+        "rawSpec": "^1.1.0",
+        "spec": ">=1.1.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/davem/Documents/Ongoing/MMU/RescueStation-DemoMobileClient/code/investigations/ackNack/node_modules/angular-qrcode"
+    ]
+  ],
+  "_from": "qrcode-generator@>=1.1.0 <2.0.0",
+  "_hasShrinkwrap": false,
+  "_id": "qrcode-generator@1.4.1",
+  "_inCache": true,
+  "_location": "/qrcode-generator",
+  "_nodeVersion": "8.10.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/qrcode-generator_1.4.1_1535805029231_0.060487266612573976"
+  },
+  "_npmUser": {
+    "name": "kazuhikoarase",
+    "email": "kazuhiko.arase@gmail.com"
+  },
+  "_npmVersion": "6.3.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "qrcode-generator@^1.1.0",
+    "scope": null,
+    "escapedName": "qrcode-generator",
+    "name": "qrcode-generator",
+    "rawSpec": "^1.1.0",
+    "spec": ">=1.1.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/angular-qrcode"
+  ],
+  "_resolved": "https://registry.npmjs.org/qrcode-generator/-/qrcode-generator-1.4.1.tgz",
+  "_shasum": "bfb6760e05d12c39df8acd60a0d459bdb2fa0756",
+  "_shrinkwrap": null,
+  "_spec": "qrcode-generator@^1.1.0",
+  "_where": "/Users/davem/Documents/Ongoing/MMU/RescueStation-DemoMobileClient/code/investigations/ackNack/node_modules/angular-qrcode",
+  "author": {
+    "name": "Kazuhiko Arase"
+  },
+  "bugs": {
+    "url": "https://github.com/kazuhikoarase/qrcode-generator/issues"
+  },
+  "dependencies": {},
+  "description": "QR Code Generator implementation in JavaScript.",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dist": {
+    "integrity": "sha512-KOdSAyFBPf0/5Z3mra4JfSbjrDlUn2J3YH8Rm33tRGbptxP4vhogLWysvkQp8mp5ix9u80Wfr4vxHXTeR9o0Ug==",
+    "shasum": "bfb6760e05d12c39df8acd60a0d459bdb2fa0756",
+    "tarball": "https://registry.npmjs.org/qrcode-generator/-/qrcode-generator-1.4.1.tgz",
+    "fileCount": 9,
+    "unpackedSize": 113022,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbioZlCRA9TVsSAnZWagAAFxkP/A1p81f7w9Pai09L+MUJ\nmV81gq1lbtZYM4Qyhpd0chsVrfTG95TTQS5Z9cRyq4Egtv2EoRKjROYIVumQ\nBa5BC1VbKlNjaQlS3Zdoif767nMvW3U7LIRWnetqEzU2V6MvaYcofN/6jo6e\nKJEHyo89Hn3h9hR6/6JRES9N4DIk457oGWNEsYk5g79ezFhJXn5XPzcrdR0r\nSrbZ9dAm4WUCZU4+Vp62zgw9Rb8MR0/rdghu89lkhadywQCKWcNZM9/pZ9lV\ndVh0U/N9CNE42taS6gME/2zSJxwQPpasQ38UW93LMIHHH6nhie4a4ZKxNeul\nt3ZacACboOPTq7F20C3UHeOsr5vhshJhAmcCs8haTi+AaNN/tw3ijIkGqDII\noC+gVOr1BnWzNy+so28/3OG3xSF2tC6LAkqVfIsVaJ4SEJBQ0iuhYNYW31R0\nOX5Mhv9pFX3umPwp+x2KKjrCGT8FQmwa7aKuI+lwWkTINFbqZIO3LIEiPPhz\nAtkHS1tUzTYE8YjanKNNgrdiLJxBSKkceyUj7teUVHXXNkKDV8iWkMz28bZf\nAexAKgai5CxfnCH2ntNxHyVOKvVhvz9NH0o2DEn9WPAce7x4oDgWhbRuVGIP\nIYGXeLVu9ZtrUFsVk2Nuu+aDqaEHwkhLpC7GVIrlxx/My5ibhC/WcH43NShr\nRWOy\r\n=xxv5\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "homepage": "https://github.com/kazuhikoarase/qrcode-generator#readme",
+  "keywords": [
+    "qr",
+    "qrcode",
+    "generator"
+  ],
+  "license": "MIT",
+  "main": "qrcode.js",
+  "maintainers": [
+    {
+      "name": "kazuhikoarase",
+      "email": "kazuhiko.arase@gmail.com"
+    }
+  ],
+  "name": "qrcode-generator",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazuhikoarase/qrcode-generator.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "types": "qrcode.d.ts",
+  "version": "1.4.1"
+}

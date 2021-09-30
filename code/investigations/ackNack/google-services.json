@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "930939697602",
+    "firebase_url": "https://rescuestationnativepushtest.firebaseio.com",
+    "project_id": "rescuestationnativepushtest",
+    "storage_bucket": "rescuestationnativepushtest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930939697602:android:c64fa01ca2ffb907",
+        "android_client_info": {
+          "package_name": "uk.ac.mmu.digitallabs.rs.acknack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930939697602-pseef64bfn6eidr8c95uqt1382h31sa6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcmQoQ7QdGBkxcNYaYVyuoaro0ljmN3Uk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930939697602:android:b9de31f3661ca001",
+        "android_client_info": {
+          "package_name": "uk.ac.mmu.digitallabs.rs.nativepushtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930939697602-pseef64bfn6eidr8c95uqt1382h31sa6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcmQoQ7QdGBkxcNYaYVyuoaro0ljmN3Uk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
